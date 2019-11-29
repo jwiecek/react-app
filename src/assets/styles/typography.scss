@@ -1,0 +1,20 @@
+@import "./../../assets/styles/variables";
+
+p, span, label {
+  font-size: 1.1rem;
+  color: $font-color;
+}
+
+p {
+  line-height: 2rem;
+}
+
+label {
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: bold;
+}

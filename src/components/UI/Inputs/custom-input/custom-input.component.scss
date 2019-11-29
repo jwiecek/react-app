@@ -1,0 +1,77 @@
+@import '../../../../styles/variables';
+@import '../../../../styles/mixins';
+@import '../../../../styles/global';
+
+.custom-input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  .react-datepicker-popper.react-datepicker-popper {
+    display: none;
+  }
+  .custom-input-view-password-container {
+    cursor: pointer;
+    margin-top: 16px;
+    height: 100%;
+  }
+  .custom-input-edit-icon {
+    visibility: hidden;
+    align-self: flex-end;
+    margin-bottom: px(3);
+  }
+  &:hover {
+    .custom-input-edit-icon {
+      visibility: visible;
+      cursor: pointer;
+    }
+  }
+}
+.custom-input-dimmed {
+  cursor: initial;
+  opacity: 0.3;
+}
+.custom-input-error.custom-input-error {
+  > label, > input {
+    color: $primary-color-accent;
+  }
+}
+.custom-input-regular-input-width.custom-input-regular-input-width {
+  width: 100%;
+  height: px(45);
+  > div {
+    &:before {
+      display: none;
+    }
+    &:after {
+      display: none;
+    }
+    color: $primary-color-black;
+    > input {
+      @include body-semi-bold-15;
+      font-family: $font-family-medium;
+      padding-bottom: px(4);
+
+      @media only screen and (max-width: $sm) {
+        font-size: px(16);
+      }
+    }
+  }
+  > label {
+    color: $secondary-color-gray30;
+    @include body-book-15;
+  }
+}
+.custom-input-error.custom-input-error.custom-input-error {
+  label, input {
+    color: $primary-color-accent-hover;
+  }
+}
+.custom-input-border-line-visible {
+  border-bottom: px(1) solid $secondary-color-gray30;
+}
+.custom-input-border-line-hidden {
+  border-bottom: px(1) solid transparent;
+}
+.custom-input-disable-height {
+}

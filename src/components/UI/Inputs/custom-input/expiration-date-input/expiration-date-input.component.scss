@@ -1,0 +1,49 @@
+@import '../../../../../styles/variables';
+@import './../../../../../styles/global';
+@import './../../../../../styles/mixins';
+
+.exp-date-input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.exp-date-input-error.exp-date-input-error {
+  > label, > input {
+    color: $primary-color-accent;
+  }
+}
+.exp-date-input-regular-input-width.exp-date-input-regular-input-width {
+  width: 100%;
+  height: px(45);
+  > div {
+    &:before {
+      display: none;
+    }
+    &:after {
+      display: none;
+    }
+    color: $primary-color-black;
+    > input {
+      @include body-semi-bold-15;
+      font-family: $font-family-medium;
+      padding-bottom: px(4);
+
+      @media only screen and (max-width: $sm) {
+        font-size: px(16);
+      }
+    }
+  }
+  > label {
+    color: $secondary-color-gray30;
+    @include body-book-15;
+  }
+}
+.exp-date-input-error.exp-date-input-error.exp-date-input-error {
+  label, input {
+    color: $primary-color-accent-hover;
+  }
+}
+.exp-date-input-border-line-visible {
+  border-bottom: px(1) solid $secondary-color-gray30;
+}

@@ -1,0 +1,12 @@
+.ContentItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.ItemBody {
+  display: grid;
+  grid-template-columns: auto 300px;
+  align-items: stretch;
+  grid-row-gap: 50px;
+  grid-column-gap: 10px;
+}

@@ -1,0 +1,50 @@
+//@import "../../../../styles/global";
+//@import "../../../../styles/variables";
+//@import "../../../../styles/mixins";
+//
+//.add-photo-input-input-file {
+//  position: relative;
+//  align-self: center;
+//  width: 82px;
+//  height: 82px;
+//  border-radius: 50%;
+//  background-color: #C4C4C4;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  cursor: pointer;
+//  .add-photo-input-hidden-file-input {
+//    display: none;
+//  }
+//  .add-photo-input-avatar {
+//    width: 82px;
+//    height: 82px;
+//    border-radius: 50%;
+//    object-fit: cover;
+//  }
+//  &:hover {
+//    .add-photo-input-edit {
+//      width: px(33);
+//      height: px(33);
+//      background-color: $primary-color-accent;
+//      display: flex;
+//      justify-content: center;
+//      align-items: center;
+//      border-radius: 50%;
+//      position: absolute;
+//      bottom: px(-5);
+//      right: px(-15);
+//    }
+//  }
+//  .add-photo-input-edit {
+//    display: none;
+//  }
+//  .add-photo-upload-error {
+//    position: absolute;
+//    bottom: -30px;
+//    width: 200px;
+//    color: $primary-color-accent;
+//    text-align: center;
+//    @include s4-style-15;
+//  }
+//}
